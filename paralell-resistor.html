@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+<br>
+	<form>	
+		Input Voltage: <input type="number" name="R3" size=""> (Optional)<br><br>
+        
+		R1: <input type="number" name="R3" size="">
+        <select> <!-- resistance multiplier -->
+          <option value="milli">mOhm</option>
+          <option value="ohm" selected>Ohm</option>
+          <option value="kilo">kOhm</option>
+          <option value="mega">MOhm</option>
+        </select>
+
+        <select> <!-- resistance tolerance -->
+          <option value="0.05">0.05%</option>
+          <option value="0.1">0.1%</option>
+          <option value="0.25">0.25%</option>
+          <option value="1" selected>1%</option>
+          <option value="5">5%</option>
+          <option value="10">10%</option>
+        </select>
+        
+        <select> <!-- resistance temp coefficient -->
+          <option value="5ppm">±5ppm</option>
+          <option value="10ppm">±10ppm</option>          
+          <option value="15ppm">±15ppm</option>
+          <option value="25ppm">±25ppm</option>
+          <option value="50ppm">±50ppm</option>
+          <option value="100ppm" selected>±100ppm</option>
+          <option value="200ppm">±200ppm</option>
+          <option value="-200+400ppm">-200ppm to +400ppm</option>
+        </select>        
+
+        <select> <!-- package type -->
+          <option value="wirewound">Wirewound</option>
+          <option value="0402">0402</option>          
+          <option value="0603" selected>0603</option>
+          <option value="0805">0805</option>
+          <option value="....">.....</option>
+        </select>  
+
+        <select> <!-- power rating -->
+          <option value="100mW" selected>100mW</option>
+          <option value="0402">0402</option>          
+          <option value="0603">0603</option>
+          <option value="0805">0805</option>
+          <option value="....">.....</option>
+        </select>
+        
+      <br>
+        R2: <input type="number" name="R3" size=""><br>
+        R3: <input type="number" name="R3" size=""><br>
+        R4: <input type="number" name="R3" size=""><br>
+        Rn: <input type="button" value="+" name="A1" onclick="add();"><br>  
+		
+	</form>
+    
+        <p>Result: 100 mOhm ± 1%</p>
+    	
+        <p>Result (if voltage is entered):    
+        R1 (Current through): 0.1mA 
+        R1 (Power dissipated): 123mW
+        R2 (Current through): 0.1mA 
+        R2 (Power dissipated): 123mW
+        </p>
+    	
+        resultaten ska inte bara visa värdet men även osäkerhetspanet baserat på tolaeranser <br> 
+        och hur det ser ut över olika tempspann (rita en graf?)<br>
+        typisk drift över tid på resistansvärde 
+        
+        //TODO - lägg till en "Feature request button"<br> 
+        //TODO - lägg till en error report button<br> 
+
+        
+
+
+
+
+
+
+Referenser:
+
+http://www.edn.com/design/analog/4329932/Worst-case-circuit-design-includes-component-tolerances
+
+http://www.vishay.com/docs/28809/driftcalculation.pdf
+
+http://industrial.panasonic.com/lecs/www-data/pdf/AOA0000/AOA0000PE36.pdf 
+
+http://www.edn.com/design/components-and-packaging/4363620/The-hidden-variable-circuit-stability-as-a-function-of-resistor-stability
+
+http://www.vishaypg.com/docs/49865/selresis.pdf
+
+http://www.ieee.li/pdf/essay/basics_of_linear_fixed_resistors.pdf
+
+http://www.em.avnet.com/en-us/design/technical-articles/Pages/Articles/Resistors-101-What-to-Consider-When-Designing-with-These-Essential-Passive-Components.aspx?print=true
+
+http://www.vishaypg.com/docs/49789/DSG_VFR.pdf
+
+http://apps.usd.edu/coglab/psyc770/resistors/r4beginner.html
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        </script>
+    </body>
+</html>
