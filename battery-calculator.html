@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+<br>
+	<form>	
+        
+        
+        Urladdninsprofil över tid och laststorlek<br>
+        Återkommande strömdragning period/ma dragni g räknar själv ut avg energiflrbrukning<br>
+        <br>
+        
+		mAh: <input type="number" name="mahin" size=""><br>
+        nominal volts: <input type="number" name="voltin" size="">
+        <br>
+        Chemistry:
+        <select> <!-- resistance multiplier -->
+          <option value="blabla">Zinc-carbon</option>
+          <option value="ohm" selected>Alkaline</option>
+          <option value="kilo">Lithium</option>
+          <option value="mega">Mercury</option>
+          <option value="mega">Silver oxide</option>
+          <option value="mega">Nickel-cadmium</option>
+          <option value="mega">Lithium ion (Li-MnO2 ("CR"))</option>
+          <option value="mega">Lithium ion (Li-(CF)x ("BR"))</option>
+          <option value="mega">Lithium ion (Li-FeS2 ("FR"))</option>
+        </select>
+
+        <select> <!-- resistance tolerance -->
+          <option value="0.05">CR1020</option>
+          <option value="0.1">CR2030</option>
+          <option value="0.25">AAA</option>
+          <option value="1" selected>AA</option>
+          <option value="5">D</option>
+          <option value="10">Undefined</option>
+        </select>
+        
+        <select> <!-- resistance temp coefficient -->
+          <option value="5ppm">±5ppm</option>
+          <option value="10ppm">±10ppm</option>          
+          <option value="15ppm">±15ppm</option>
+          <option value="25ppm">±25ppm</option>
+          <option value="50ppm">±50ppm</option>
+          <option value="100ppm" selected>±100ppm</option>
+          <option value="200ppm">±200ppm</option>
+          <option value="-200+400ppm">-200ppm to +400ppm</option>
+        </select>        
+
+        <select> <!-- package type -->
+          <option value="wirewound">Wirewound</option>
+          <option value="0402">0402</option>          
+          <option value="0603" selected>0603</option>
+          <option value="0805">0805</option>
+          <option value="....">.....</option>
+        </select>  
+
+        <select> <!-- power rating -->
+          <option value="100mW" selected>100mW</option>
+          <option value="0402">0402</option>          
+          <option value="0603">0603</option>
+          <option value="0805">0805</option>
+          <option value="....">.....</option>
+        </select>
+        
+      <br>
+        Rn: <input type="button" value="+" name="A1" onclick="add();"><br>  
+		
+	</form>
+    
+        <p>Result: x minutes
+                    x2 hours
+                    x3 days
+                    x4 month
+                    x5 years
+
+        
+
+
+
+Referenser:
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        </script>
+    </body>
+</html>
